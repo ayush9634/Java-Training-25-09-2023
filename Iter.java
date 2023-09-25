@@ -18,7 +18,9 @@ public class Iter {
        al.add(12.5f);
        al.add(132.1736892);
        al.add('$');
-        System.out.println("Elements: "+al );
+       System.out.println("Elements: "+al ); //Printing the arraylist.
+        
+        //Printing the elements from list using iterator
         System.out.println();
         System.out.println("Using Iterator");
         Iterator itr = al.iterator();
@@ -27,6 +29,7 @@ public class Iter {
             System.out.println(itr.next()+" ");
         }
         
+        //Print alternate numbers from list.
         System.out.println();
         System.out.println("Printing alternate elements: ");
         Iterator i = al.iterator();
@@ -36,7 +39,7 @@ public class Iter {
             if(i.hasNext())
                 i.next();
         }
-        
+         //Printing list in reverse order
         System.out.println();
         System.out.println("Reverse order:");
         ListIterator lit = al.listIterator(al.size());
@@ -44,8 +47,9 @@ public class Iter {
         {
             System.out.println(lit.previous()+" ");
         }
-
-          System.out.println();
+        
+        //Adding more than one element to existing arraylist.
+        System.out.println();
         System.out.println("Adding more than one element");
         Collections.addAll(al,52,"UK",4545);
         System.out.println(al);
