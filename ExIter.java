@@ -37,5 +37,7 @@ public class ExIter {
         System.out.println(ls);
         ls.remove("Ayush");//Removing the element
         System.out.println(ls);
+        ls.clear();//Remove all the elements from array.
+        System.out.println(ls);
     }
 }
