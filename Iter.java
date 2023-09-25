@@ -19,12 +19,14 @@ public class Iter {
        al.add(132.1736892);
        al.add('$');
         System.out.println("Elements: "+al );
+        System.out.println();
         System.out.println("Using Iterator");
         Iterator itr = al.iterator();
         while(itr.hasNext())
         {
             System.out.println(itr.next()+" ");
         }
+        System.out.println();
         System.out.println("Printing alternate elements: ");
         Iterator i = al.iterator();
         while(i.hasNext())
@@ -33,5 +35,13 @@ public class Iter {
             if(i.hasNext())
                 i.next();
         }
+        System.out.println();
+        System.out.println("Reverse order:");
+        ListIterator lit = al.listIterator(al.size());
+        while(lit.hasPrevious())
+        {
+            System.out.println(lit.previous()+" ");
+        }
+        
     }
 }
