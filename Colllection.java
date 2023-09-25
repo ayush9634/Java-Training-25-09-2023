@@ -19,5 +19,10 @@ public class Colllection {
        al.add(132.1736892);
        al.add('$');
         System.out.println("Elements: "+al );
+        System.out.println("Using Iterator");
+        while(itr.hasNext())
+            {
+                System.out.print(itr.next() +" ");
+            }
     }
 }
