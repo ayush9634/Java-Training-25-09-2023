@@ -26,6 +26,7 @@ public class Iter {
         {
             System.out.println(itr.next()+" ");
         }
+        
         System.out.println();
         System.out.println("Printing alternate elements: ");
         Iterator i = al.iterator();
@@ -35,6 +36,7 @@ public class Iter {
             if(i.hasNext())
                 i.next();
         }
+        
         System.out.println();
         System.out.println("Reverse order:");
         ListIterator lit = al.listIterator(al.size());
@@ -42,6 +44,11 @@ public class Iter {
         {
             System.out.println(lit.previous()+" ");
         }
+
+          System.out.println();
+        System.out.println("Adding more than one element");
+        Collections.addAll(al,52,"UK",4545);
+        System.out.println(al);
         
     }
 }
