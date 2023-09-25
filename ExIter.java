@@ -30,5 +30,12 @@ public class ExIter {
                 it.remove();
         }
         System.out.println(ls);
+        Collections.addAll(ls,"Algo","Ruby","RDBMS","JS","CSS","HTML","React");//Adding more than one element in arraylist.
+        System.out.println("Upadated "+ls);
+        System.out.println("Index of "+ls.get(2));//Accessing the value at particular index. 
+        ls.set(1,"Ayush");//Setting the value at particular index.
+        System.out.println(ls);
+        ls.remove("Ayush");//Removing the element
+        System.out.println(ls);
     }
 }
